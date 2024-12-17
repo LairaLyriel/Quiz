@@ -1,0 +1,159 @@
+@charset "UTF-8";
+/* line 7, ../../../../../femiquiz/scss/categorias.scss */
+.bodyg {
+  z-index: 1;
+  font-family: Arial, sans-serif;
+  background-color: #003B8F;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* line 21, ../../../../../femiquiz/scss/categorias.scss */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: antiquewhite;
+}
+
+/* line 26, ../../../../../femiquiz/scss/categorias.scss */
+header h1 {
+  font-size: 2.5rem;
+  margin: 0rem;
+}
+
+/* line 30, ../../../../../femiquiz/scss/categorias.scss */
+header p {
+  padding-bottom: 50px;
+  font-size: 1.5rem;
+  margin: 0.5rem 0 0;
+}
+
+/* line 38, ../../../../../femiquiz/scss/categorias.scss */
+main .opcoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  max-width: 400px;
+  width: 100%;
+  padding: 1rem;
+}
+
+/* line 47, ../../../../../femiquiz/scss/categorias.scss */
+main .option {
+  padding: 1rem 2rem;
+  background-color: #00D5D8;
+  color: #000000;
+  font-size: 1rem;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  width: 40%;
+  /* Ajuste conforme necessário */
+}
+
+/* line 60, ../../../../../femiquiz/scss/categorias.scss */
+main .option:hover {
+  background-color: #72fdff;
+}
+
+/* line 64, ../../../../../femiquiz/scss/categorias.scss */
+main .certo {
+  background-color: #00FF00;
+  color: #000000;
+}
+
+/* line 69, ../../../../../femiquiz/scss/categorias.scss */
+main .errado {
+  background-color: #FF0000;
+  color: #000000;
+}
+
+/* line 75, ../../../../../femiquiz/scss/categorias.scss */
+.botao {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #00D5D8;
+  color: #000000;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  left: 40px;
+  top: 40px;
+}
+
+/* line 89, ../../../../../femiquiz/scss/categorias.scss */
+.botao:hover {
+  background-color: #72fdff;
+}
+
+/* line 95, ../../../../../femiquiz/scss/categorias.scss */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* line 105, ../../../../../femiquiz/scss/categorias.scss */
+.modal-section {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+  max-width: 500px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* line 119, ../../../../../femiquiz/scss/categorias.scss */
+.close {
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #aaa;
+  float: right;
+  cursor: pointer;
+}
+
+/* line 127, ../../../../../femiquiz/scss/categorias.scss */
+.button-modal {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #00D5D8;
+  color: #000000;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 0.7rem;
+  margin: 0.2rem;
+}
+
+/* line 139, ../../../../../femiquiz/scss/categorias.scss */
+.button-modal:hover {
+  background-color: #72fdff;
+}
+
+/*# sourceMappingURL=categorias.css.map */

@@ -1,0 +1,141 @@
+$background-colorg: #003B8F;
+$text-color: #000000;
+$button-background: #00D5D8;
+$correct-color: #00FF00;
+$incorrect-color: #FF0000;
+
+.bodyg{
+    z-index: 1;
+    font-family: Arial, sans-serif;
+    background-color: $background-colorg;
+    color: $text-color;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+header{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: antiquewhite;
+
+    h1{
+        font-size: 2.5rem;
+        margin: 0rem;
+    }
+    p{
+        padding-bottom: 50px;
+        font-size: 1.5rem;
+        margin:  0.5rem 0 0;
+    }
+}
+
+main{
+    .opcoes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+        max-width: 400px;
+        width: 100%; 
+        padding: 1rem;
+    }    
+    .option {
+        padding: 1rem 2rem;
+        background-color: $button-background;
+        color: $text-color;
+        font-size: 1rem;
+        border-radius: 25px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        text-align: center;
+        width: 40%; /* Ajuste conforme necessário */
+    }
+    
+    .option:hover {
+        background-color: lighten($button-background, 30%);
+    }
+    
+    .certo {
+        background-color: $correct-color;
+        color: $text-color;
+    }
+    
+    .errado {
+        background-color: $incorrect-color;
+        color: $text-color;
+    }
+}
+
+.botao{
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: $button-background;
+    color: $text-color;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    left: 40px; 
+    top: 40px;  
+    &:hover{
+        background-color: lighten($button-background, 30%);
+      }
+  }
+
+//   modal
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; //pra sobrepor
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.4); //efeito transparente
+}
+.modal-section {
+    position: absolute;
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%; 
+    max-width: 500px; 
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    text-align: center; 
+}
+.close {
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: #aaa;
+    float: right;
+    cursor: pointer;
+}
+.button-modal {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #00D5D8;
+    color: #000000;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 0.7rem;
+    margin: 0.2rem; 
+}
+.button-modal:hover {
+    background-color: lighten(#00D5D8, 30%);
+}

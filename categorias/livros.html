@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="../css/categorias.css">
+</head>
+<body class="bodyg">
+    <header>
+        <button class="botao" onclick="window.location.href='/inicio/index.html'">Voltar</button>
+        <h1>LIVROS</h1>
+        <p id="question-text">Pergunta aparece aqui</p>
+    </header>
+    <main>
+        <section class="opcoes" id="options-container">
+            
+        </section>
+        
+        <!-- modal final -->
+        <div id="result-modal" class="modal">
+            <section class="modal-section">
+                <h2>Todas as perguntas da categoria foram respondidas!</h2>
+                <p id="result-text">Você acertou X de Y perguntas.</p>
+                <button class="button-modal" id="home-button">Início</button>
+            </section>
+        </div>
+
+    </main>
+    <script src="../js/livros.js"></script>
+</body>
+</html>

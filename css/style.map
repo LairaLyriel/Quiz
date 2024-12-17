@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../scss/style.scss"
+	],
+	"sourcesContent": [
+		"$background: #00a1b3;\r\n$text-color: #fff;\r\n$button-background: #1d7d88;\r\n\r\nbody {\r\n  font-family: arial, sans-serif;\r\n  background-color: $background;\r\n  color: $text-color;\r\n  margin: 0;\r\n  padding: 0;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: center;\r\n  height: 100vh;\r\n}\r\n\r\nheader{\r\n  text-align: center;\r\n  margin-bottom: 2rem;\r\n \r\n  h1{\r\n    font-size: 2.5rem;\r\n    margin: 0.5rem 0 0;\r\n  }\r\n}\r\n\r\nmain{\r\n  .quiz-categorias{\r\n    display: flex;\r\n    flex-wrap: wrap;\r\n    justify-content: center;\r\n    gap: 1rem;\r\n    width: 500px;\r\n    max-width: 600px;\r\n  }\r\n  .categorias{\r\n    display: inline-block;\r\n    padding: 1rem 2rem;\r\n    background-color: $button-background;\r\n    color: $text-color;\r\n    text-decoration: none;\r\n    font-size: 1.2rem;\r\n    border-radius: 20px;\r\n    border: none;\r\n    cursor: pointer;\r\n    transition: background-color 0.3s ease;\r\n\r\n    &:hover{\r\n      background-color: lighten($button-background, 10%);\r\n    }\r\n    \r\n  }\r\n}\r\n\r\n\r\n"
+	],
+	"names": [],
+	"mappings": ";AAIA,AAAA,IAAI,CAAC;EACH,WAAW,EAAE,iBAAiB;EAC9B,gBAAgB,EANL,OAAO;EAOlB,KAAK,EANM,IAAI;EAOf,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,MAAM;EACvB,MAAM,EAAE,KAAK;CACd;;;AAED,AAAA,MAAM,CAAA;EACJ,UAAU,EAAE,MAAM;EAClB,aAAa,EAAE,IAAI;CAMpB;;;AARD,AAIE,MAJI,CAIJ,EAAE,CAAA;EACA,SAAS,EAAE,MAAM;EACjB,MAAM,EAAE,UAAU;CACnB;;;AAGH,AACE,IADE,CACF,gBAAgB,CAAA;EACd,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,IAAI;EACf,eAAe,EAAE,MAAM;EACvB,GAAG,EAAE,IAAI;EACT,KAAK,EAAE,KAAK;EACZ,SAAS,EAAE,KAAK;CACjB;;;AARH,AASE,IATE,CASF,WAAW,CAAA;EACT,OAAO,EAAE,YAAY;EACrB,OAAO,EAAE,SAAS;EAClB,gBAAgB,EArCA,OAAO;EAsCvB,KAAK,EAvCI,IAAI;EAwCb,eAAe,EAAE,IAAI;EACrB,SAAS,EAAE,MAAM;EACjB,aAAa,EAAE,IAAI;EACnB,MAAM,EAAE,IAAI;EACZ,MAAM,EAAE,OAAO;EACf,UAAU,EAAE,0BAA0B;CAMvC;;;AAzBH,AAqBI,IArBA,CASF,WAAW,AAYR,MAAM,CAAA;EACL,gBAAgB,EAAE,OAAgC;CACnD"
+}
